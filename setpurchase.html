@@ -8,10 +8,11 @@
 },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
 a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
 twq('init','o7a3b');
-twq('track','PageView');
 twq('config','o7a3b', {
   email_address: 'test_email@twitter.com',
   phone_number: '425-785-2996'
+});
+twq('track','PageView', {content_ids:['uwt_product_1','uwt_product_2']
 });
 </script> 
 <!-- End event snippet -->
@@ -43,6 +44,6 @@ twq('config','o7a3b', {
   <body>
      SET Purchase Converted to OneTag Purchase with 2 Product IDs
      
-     1.94 Dual implementation
+     1.95 add UWT params
   </body>
 </html>
