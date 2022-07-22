@@ -1,17 +1,29 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Twitter universal website tag code -->
+<!-- Start event snippet -->
 <script>
 !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
 a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
-// Insert Twitter Pixel ID and Standard Event data below
-twq('init','o7a3b');
-twq('track','PageView',{content_ids:['product_id_1','product_id_2'], value: 49.99, currency: 'USD'});
+twq('config','o7a3b', {
+  email_address: 'test_email@twitter.com',
+  phone_number: '425-785-2996'
+});
+</script> 
+<!-- End event snippet -->
 
+<!-- Start event snippet -->
+<script>
+  twq('event', 'tw-o7a3b-o7umf', {
+    email_address: 'test_email@twitter.com',
+    phone_number: '+11234567890',
+    value: 49.99,
+    currency: 'USD',
+    contents: [{content_id: 'OT001001', num_items: 1},{content_id: 'OT001002', num_items: 1}]
+  });
 </script>
-<!-- End Twitter universal website tag code -->
+<!-- End event snippet -->
     <meta charset="utf-8"> 
     <title>Page Title</title> 
   </head> 
